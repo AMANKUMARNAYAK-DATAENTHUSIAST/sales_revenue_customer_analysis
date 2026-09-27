@@ -19,7 +19,7 @@ SQL(aggrgation, groupby, orderby, limit, case, etc), Power BI(power bi ETL, data
 
 This project helps us in making business decisions by handing over critical insights such as which cities need more marketing campaigns, which customers are our loyal customers, how much payment do we receive from cards, upi, etc. It also helps us know which products are performing better and which payment method causes more cancellation rate in orders. Tapping these dimensions will improve the business model and cause improvement in sales and customer satisfaction.
 
-Data Visualization
+#Data Visualization
 
 https://github.com/AMANKUMARNAYAK-DATAENTHUSIAST/sales_revenue_customer_analysis/blob/main/Screenshot%202026-09-26%20211650.png?raw=true
 https://github.com/AMANKUMARNAYAK-DATAENTHUSIAST/sales_revenue_customer_analysis/blob/main/Screenshot%202026-09-26%20211740.png?raw=true
