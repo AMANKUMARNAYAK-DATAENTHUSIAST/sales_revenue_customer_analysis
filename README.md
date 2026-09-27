@@ -22,6 +22,7 @@ This project helps us in making business decisions by handing over critical insi
 #Data Visualization
 
 https://github.com/AMANKUMARNAYAK-DATAENTHUSIAST/sales_revenue_customer_analysis/blob/main/Screenshot%202026-09-26%20211650.png?raw=true
+https://github.com/AMANKUMARNAYAK-DATAENTHUSIAST/sales_revenue_customer_analysis/blob/main/Screenshot%202026-09-26%20211740.png?raw=true
 
 
 
