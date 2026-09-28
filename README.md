@@ -4,7 +4,7 @@ Analyzing sales pattern, revenue insights and customers, this project performs a
 
 # Tools
 
-SQL(aggrgation, groupby, orderby, limit, case, etc), Power BI(power bi ETL, data modelling-star schema, rls-static, data visualizations, powerquery, etc), Python(Numpy, Pandas, datefuntions, etc), Microsoft-Excel(data cleaning, null and outlier handling, etc), LLM(s)- finding errors and mistakes in the dataset in a better way.
+SQL(aggrgation, groupby, orderby, limit, case, etc), Power BI(power bi ETL, data modelling-star schema, rls-static, data visualizations, powerquery, etc), Python(Numpy, Pandas, date-funtions, etc), Microsoft-Excel(data cleaning, null and outlier handling, etc), LLM(s)- finding errors and mistakes in the dataset in a better way.
 
 # Business Questions
 
