@@ -1,12 +1,12 @@
 SQL Codes
 
-# TOTAL REVENUE
+# Total Revenue
 
 SELECT SUM(quantity * unit_price) AS total_revenue
 FROM ecom
 WHERE order_status = 'DELIVERED';
 
-# REVENUE BY CATEGORY
+# Revenue by Category
 
 SELECT category, SUM(quantity * unit_price) AS revenue
 FROM ecom
@@ -14,7 +14,7 @@ WHERE order_status = 'DELIVERED'
 GROUP BY category
 ORDER BY revenue DESC;
 
-# REVENUE BY CITY
+# Revenue by City
 
 SELECT city, SUM(quantity * unit_price) AS revenue
 FROM ecom
@@ -22,7 +22,7 @@ WHERE order_status = 'DELIVERED'
 GROUP BY city
 ORDER BY revenue DESC;
 
-# TOP CUSTOMERS BY SPENDING
+# Top Customers by Spending
 
 SELECT customer_id, customer_name,
        COUNT(order_id) AS total_orders,
@@ -33,7 +33,7 @@ GROUP BY customer_id, customer_name
 ORDER BY total_spent DESC
 LIMIT 10;
 
-# REPEAT CUSTOMERS
+# Repeat Customers
 
 SELECT customer_id, customer_name, COUNT(order_id) AS order_count
 FROM ecom
@@ -42,14 +42,14 @@ HAVING COUNT(order_id) > 1
 ORDER BY order_count DESC;
 
 
-# ORDER STATUS ANALYSIS
+# Order Status Analysis
 
 SELECT order_status, COUNT(*) AS total_orders
 FROM ecom
 GROUP BY order_status;
 
 
-# CANCELLATION RATE BY CATEGORY
+# Cancellation Rate by Category
 
 SELECT category,
        COUNT(CASE WHEN order_status = 'CANCELLED' THEN 1 END) * 100.0 /
@@ -59,7 +59,7 @@ GROUP BY category
 ORDER BY cancellation_rate DESC;
 
 
-# RETURN RATE BY PRODUCT
+# Return Rate by Product
 
 SELECT product,
        COUNT(CASE WHEN order_status = 'RETURNED' THEN 1 END) * 100.0 /
@@ -75,7 +75,7 @@ ORDER BY return_rate DESC;
 
 
 
-# CANCELLATION RATE BY CITY
+# Cancellation Rate by City
 
 SELECT city,
        COUNT(CASE WHEN order_status = 'CANCELLED' THEN 1 END) * 100.0 /
@@ -85,7 +85,7 @@ GROUP BY city
 ORDER BY cancellation_rate DESC;
 
 
-# MONTHLY ORDER VOLUME
+# Monthly Order Volume
 
 
 SELECT DATE_FORMAT(order_date, '%m-%y') AS month,
@@ -95,7 +95,7 @@ GROUP BY month
 ORDER BY month;
 
 
-# MONTHLY REVENUE
+# Monthly Revenue
 
 SELECT DATE_FORMAT(order_date, '%m-%y') AS month,
        SUM(quantity * unit_price) AS revenue
@@ -105,7 +105,7 @@ GROUP BY month
 ORDER BY month;
 
 
-# PAYMENT INSIGHTS
+# Payment Insights
 
 SELECT payment_method, COUNT(*) AS total_orders
 FROM ecom
@@ -113,7 +113,7 @@ GROUP BY payment_method
 ORDER BY total_orders DESC;
 
 
-# CANCELLATION RATE BY PAYMENT METHOD
+# Cancellation Rate by Payment Method
 
 SELECT payment_method,
        COUNT(CASE WHEN order_status = 'CANCELLED' THEN 1 END) AS cancelled_orders,
