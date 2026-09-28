@@ -1,4 +1,4 @@
-# Sales_Revenue_Customer_Analysis
+# sales_revenue_customer_analysis:-(Title)
 
 Analyzing sales pattern, revenue insights and customers, this project performs a deep analysis of a e-commerce website's sales data(kaggle dataset) by performing data cleaning procedures using tools like SQL, Power BI, Python and Microsoft-Excel to extract meaningful data and to get rid of noisy and unwanted data. Asking the right business questions made it sure that we really see our data from a fruitful business perspective and gain information that enhances our decision making. This project includes concepts like data modelling, PowerBI(ETL), Numpy, Pandas, SQL data cleaning and time function queries. It also has data visualizations to understand insights through vision.
 
